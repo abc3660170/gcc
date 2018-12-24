@@ -15,3 +15,4 @@ RUN ln -s /usr/local/lib64/libstdc++.so.6.0.21 /usr/lib64/libstdc++.so.6
 RUN rm /usr/local/lib64/libstdc++.so.6.0.21-gdb.py -f
 RUN echo "/usr/local/lib64" >> /etc/ld.so.conf
 RUN ldconfig
+RUN rm -rf /usr/local/src/gcc-5.4.0*
